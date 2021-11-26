@@ -1,24 +1,24 @@
-import { get } from './get';
-import { post } from './post';
-import { put } from './put';
-import { del } from './delete';
+import get from './get.mjs';
+//import { post } from './post';
+//import { put } from './put';
+//import { del } from './delete';
 
-export function routes(req, res) {
-  switch (request.method) {
+export default function routes(req, res) {
+  switch (req.method) {
     case "GET":
-      get(request, response);
+      get(req, res);
       break;
 
     case "POST":
-      post(request, response);
+      post(req, res);
       break;
 
     case "PUT":
-      put(request, response);
+      put(req, res);
       break;
 
     case "DELETE":
-      del(request, response);
+      del(req, res);
       break;
 
     default:
