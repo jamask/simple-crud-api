@@ -1,0 +1,22 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamask/simple-crud-api.git"
+  },
+  "author": "Askhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamask/simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/jamask/simple-crud-api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
