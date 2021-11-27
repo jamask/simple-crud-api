@@ -4,7 +4,7 @@ import get from './get.mjs';
 //import { del } from './delete';
 
 export default function routes(req, res) {
-  switch (req.method) {
+  switch(req.method) {
     case "GET":
       get(req, res);
       break;
