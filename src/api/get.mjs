@@ -1,31 +1,27 @@
 import users from '../models/db.mjs';
+import returnRes from '../utils/returnRes.mjs'
 
-function returnRes (res, statusCode, contentType, data) {
-  res.statusCode = statusCode;
-  res.setHeader("Content-Type", contentType);
-  res.write(JSON.stringify(data));
-  res.end();
-}
-
-export default function (req, res) {
+export default function(req, res) {
   const arrReqUrl = req.url.split('/');
   const queryParent = arrReqUrl[1];
   const queryChild = arrReqUrl[2];
 
   if(queryParent === 'person') {
     if(queryChild) {
+      let exist = 0;
       for(let i = 0; i < users.length; i++) {
         if (users[i]['id'] === queryChild) {
-          returnRes(res, 200, 'text/json', users[i]);
+          returnRes(res, 200, users[i]);
+          exist = 1;
           break;
         }
       }
-      returnRes(res, 404, 'text/plain', 'User not found!');
+      if(!exist) returnRes(res, 404, {'message': 'User not found'});
     } else {
-      returnRes(res, 200, 'text/json', users);
+      returnRes(res, 200, users);
     }
   } else {
-    returnRes(res, 400, 'text/plain', 'Invalid request!');
+    returnRes(res, 404, {'message': 'Resource that you requested does not exist'});
   }
 
 };

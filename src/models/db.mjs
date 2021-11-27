@@ -6,7 +6,7 @@ export default [{
 },
 {
   'id': '2',
-  'name': 'Petr',
+  'name': 'Petro',
   'age': '16',
   'hobbies': ['painting', 'sport '],
 }];

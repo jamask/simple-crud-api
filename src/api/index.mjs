@@ -1,5 +1,5 @@
 import get from './get.mjs';
-//import { post } from './post';
+import post from './post.mjs';
 //import { put } from './put';
 //import { del } from './delete';
 
