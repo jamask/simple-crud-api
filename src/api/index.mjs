@@ -1,6 +1,6 @@
 import get from './get.mjs';
 import post from './post.mjs';
-//import { put } from './put';
+import put from './put.mjs';
 //import { del } from './delete';
 
 export default function routes(req, res) {
