@@ -1,7 +1,7 @@
 import get from './get.mjs';
 import post from './post.mjs';
 import put from './put.mjs';
-//import { del } from './delete';
+import del from './del.mjs';
 
 export default function routes(req, res) {
   switch(req.method) {
