@@ -5,7 +5,7 @@ Solution of [Task - https://github.com/rolling-scopes-school/basic-nodejs-course
 ## How to install
 
 - Install [Node.js](https://nodejs.org/en/) (>16)
-- Clone this repository: `https://github.com/jamask/simple-crud-api`
+- Clone this repository: `git clone https://github.com/jamask/simple-crud-api`
 - Switch branch to task1 `git checkout task1`
 - Run `npm install -D` in command line
 
@@ -14,6 +14,8 @@ Solution of [Task - https://github.com/rolling-scopes-school/basic-nodejs-course
 - Start app in development mode `npm run start:dev`
 - Start app in product mode `npm run start:prod`
 - Start tests `npm run test`
+
+## Description 
 
 - API path `/person`:
     * **GET** `/person` or `/person/${personId}` return all persons or person with corresponding `personId`
