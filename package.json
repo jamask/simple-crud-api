@@ -1,0 +1,38 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "npx nodemon app.mjs",
+    "start:prod": "npx webpack --config webpack.config.cjs && node ./dist/main.js",
+    "test": "jest --config=jest.config.cjs --verbose"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamask/simple-crud-api.git"
+  },
+  "author": "Askhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamask/simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/jamask/simple-crud-api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "babel": "^6.23.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
