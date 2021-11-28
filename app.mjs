@@ -1,6 +1,6 @@
 import http from 'http';
 import dotenv from 'dotenv';
-import routes from './api/index.mjs';
+import routes from './src/api/index.mjs';
 
 dotenv.config();
 const PORT = process.env.PORT || 4000;
